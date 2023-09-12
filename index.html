@@ -1,10 +1,12 @@
 <html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <link rel="stylesheet" href="./Assets/CSS/Style.css">
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css"
-          integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <title>Education Website</title>
     <!-- Include Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,791 +16,848 @@
     <script src="https://kit.fontawesome.com/fafa58b11e.js" crossorigin="anonymous"></script>
     <!-- Include jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <!-- Include Bootstrap JS -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
 </head>
+
 <body>
-<header>
+<!--First Div-->
+<div class=" nav-absolute bg-color-blue ">
+    <div class="m-lr-4 z-1 position-relative">
+        <div class=" row d-flex justify-content-between align-items-center mb-4 mt-4">
+            <div class="col-lg-8 col-md-12  row justify-content-start  align-items-center  d-flex  ">
+                <div class="col-xl-4 col-lg-12  px-2 fs-15 color-white fw-400"><i
+                        class="fa-solid fa-question fa-sm color-white "></i>
+                    Have a questions?
+                </div>
+                <div class="col-xl-3  col-lg-12 px-2 fs-15 color-white fw-400"><i
+                        class="fa-solid fa-phone fa-sm color-white"></i> 10 20 123
+                    456
+                </div>
+                <div class="col-xl-5  col-lg-12 px-2 fs-15 color-white fw-400"><i
+                        class="fa-solid fa-envelope fa-sm color-white"></i>
+                    reham93189310@gmail.com
+                </div>
+
+            </div>
+            <div class="col-lg-4  col-md-12 justify-content-end  ">
+                <div class=" d-flex justify-content-end ">
+                    <div class="px-2 fs-15 color-white fw-600"><i class="fa-solid fa-lock fa-sm color-white "></i> Log
+                        In
+                    </div>
+                    <div class="px-2 fs-15 color-white fw-600"><i
+                            class="fa-solid fa-user fa-sm color-white  border-none fs-900"></i> Register
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="long-line z-1 position-relative"></div>
     <!--Navbar-->
-    <!--End Navbar-->
-    <!--Hero-->
+    <nav id="navbar" class=" navbar navbar-expand-xxl z-1 bg-trans">
+        <div class="container-fluid m-lr-4">
+            <a class="navbar-brand fw-900 fs-15" href="#">Learner</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                <i class="fa-solid fa-list color-white"></i>
+            </button>
+            <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 margin-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active fs-15" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                           data-bs-toggle="dropdown" aria-expanded="false">
+                            Dropdown
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active fs-15" aria-current="page" href="#category">Category</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active fs-15" aria-current="page" href="#start">Start</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active fs-15" aria-current="page" href="#education">Education</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active fs-15" aria-current="page" href="#courses">Courses</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active fs-15" aria-current="page" href="#aboutus">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active fs-15" aria-current="page" href="#news">News</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active fs-15" aria-current="page" href="#pricing">Pricing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active fs-15" aria-current="page" href="#testimonials">Testimonials</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active fs-15" aria-current="page" href="#chooseus">Choose Us</a>
+                    </li>
+                </ul>
+                <form class="d-flex ">
+                    <!--<button class="btn btn-outline-success" type="submit">Search</button>-->
+                    <button class="btn btn-primary btn-border-nav ">Enroll Now</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+</div>
+<!--End Div-->
+
+<!--Hero & Sections-->
+<div class="z-0" id="hero">
     <div class="hero">
+        <!--Start Hero-->
         <div class="text-light text-hero">
             <p class="">WATCH THE VIDEO</p>
             <h1>Education is the Mother of leadership</h1>
-            <button class="btn btn-primary btn-rounded btn-padding fs-1 mt-4 ">Get Start</button>
+            <button class="btn btn-primary btn-rounded btn-padding fs-m mt-4 btn-border-nav ">EXPLORE COURSES</button>
 
         </div>
     </div>
     <!--End Hero-->
-</header>
-<!--Category------>
-<section class="m-lr-4 <!--container--> ">
-    <div class="mt-6 mb-4">
-        <h1 class="pt-5 justify-content-center d-flex align-items-center blue2">Browse Top Category </h1>
-        <div class="row pt-4">
-            <div class="col-xl-3 col-lg-6  col-md-6 col-sm-12 ">
-                <div class="card mb-3 light-blue border-0" style="max-width: 540px;">
-                    <div class="row g-0">
-                        <div class="col-md-4 justify-content-center d-flex align-items-center">
+    <!--Category------>
+    <section id="category" class="m-lr-4">
+        <div class="mt-6 mb-4">
+            <h1 class="pt-5 justify-content-center d-flex align-items-center blue2">Browse Top Category </h1>
+            <div class="row pt-4">
+                <div class="col-xl-3 col-lg-6  col-md-6 col-sm-12 ">
+                    <div class="card mb-3 light-blue border-0" style="max-width: 540px;">
+                        <div class="row g-0 mt--sm-6">
+                            <div class="col-md-4 justify-content-center d-flex align-items-center ">
                     <span>
-                        <i class="fa-sharp fa-solid fa-atom fa-2xl"></i>
+                        <i class="fa-sharp fa-solid fa-atom fa-2xl icons"></i>
                     </span>
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body ">
+                                    <h5 class="card-title text-align">Science</h5>
+                                    <p class="card-text text-align"><small class="text-muted">1.1391 courses</small></p>
+                                </div>
+                            </div>
                         </div>
-                        <div class="col-md-8">
-                            <div class="card-body ">
-                                <h5 class="card-title">Science</h5>
-                                <p class="card-text"><small class="text-muted">1.1391 courses</small></p>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-6  col-md-6 col-sm-12 ">
+                    <div class="card mb-3 light-blue border-0" style="max-width: 540px;">
+                        <div class="row g-0 mt--sm-6">
+                            <div class="col-md-4 justify-content-center d-flex align-items-center ">
+                    <span>
+                         <i class="fa-solid fa-briefcase fa-atom fa-2xl icons"></i>
+                    </span>
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body ">
+                                    <h5 class="card-title text-align">Business</h5>
+                                    <p class="card-text text-align"><small class="text-muted">1.1391 courses</small></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-6  col-md-6 col-sm-12 ">
+                    <div class="card mb-3 light-blue border-0" style="max-width: 540px;">
+                        <div class="row g-0 mt--sm-6">
+                            <div class="col-md-4 justify-content-center d-flex align-items-center ">
+                    <span>
+                        <i class="fa-solid fa-calculator fa-atom fa-2xl icons"></i>
+                    </span>
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body ">
+                                    <h5 class="card-title text-align fs-smaller">Finance Accounting</h5>
+                                    <p class="card-text text-align"><small class="text-muted">1.1391 courses</small></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-6  col-md-6 col-sm-12 ">
+                    <div class="card mb-3 light-blue border-0" style="max-width: 540px; ">
+                        <div class="row g-0 mt--sm-6">
+                            <div class="col-md-4 justify-content-center d-flex align-items-center ">
+                    <span>
+                         <i class="fa-light fa-solid fa-pen fa-xl icons "></i>
+                    </span>
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body ">
+                                    <h5 class="card-title text-align">Design</h5>
+                                    <p class="card-text text-align"><small class="text-muted">1.1391 courses</small></p>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col-xl-3 col-lg-6  col-md-6 col-sm-12 ">
-                <div class="card mb-3 light-blue border-0" style="max-width: 540px;">
-                    <div class="row g-0">
-                        <div class="col-md-4 justify-content-center d-flex align-items-center">
+            <div class="row pt-4">
+                <div class="col-xl-3 col-lg-6  col-md-6 col-sm-12 ">
+                    <div class="card mb-3 light-blue border-0" style="max-width: 540px;">
+                        <div class="row g-0 mt--sm-6">
+                            <div class="col-md-4 justify-content-center d-flex align-items-center mt--sm-4">
                     <span>
-                        <i class="fa-sharp fa-solid fa-atom fa-2xl"></i>
+                        <i class="fa-regular  fa-solid fa-music fa-2xl icons"></i>
                     </span>
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body ">
+                                    <h5 class="card-title text-align">Music</h5>
+                                    <p class="card-text text-align"><small class="text-muted">1.1391 courses</small></p>
+                                </div>
+                            </div>
                         </div>
-                        <div class="col-md-8">
-                            <div class="card-body ">
-                                <h5 class="card-title">Science</h5>
-                                <p class="card-text"><small class="text-muted">1.1391 courses</small></p>
+                    </div>
+                </div>
+                <div class="col-xl-3  col-lg-6  col-md-6 col-sm-12 ">
+                    <div class="card mb-3 light-blue border-0" style="max-width: 540px;">
+                        <div class="row g-0 mt--sm-6">
+                            <div class="col-md-4 justify-content-center d-flex align-items-center mt--sm-4">
+                    <span>
+                     <i class="fa-light fa-arrows-spin fa-solid fa-2xl icons"></i>
+                    </span>
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body ">
+                                    <h5 class="card-title text-align">Marketing</h5>
+                                    <p class="card-text text-align"><small class="text-muted">1.1391 courses</small></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3  col-lg-6  col-md-6 col-sm-12 ">
+                    <div class="card mb-3 light-blue border-0" style="max-width: 540px;">
+                        <div class="row g-0 mt--sm-6">
+                            <div class="col-md-4 justify-content-center d-flex align-items-center mt--sm-4">
+                    <span>
+                        <i class="fa-solid fa-camera fa-xl icons"></i>
+                    </span>
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body ">
+                                    <h5 class="card-title text-align">Photography</h5>
+                                    <p class="card-text text-align"><small class="text-muted">1.1391 courses</small></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3  col-lg-6  col-md-6 col-sm-12 ">
+                    <div class="card mb-3 light-blue border-0" style="max-width: 540px; ">
+                        <div class="row g-0 mt--sm-6">
+                            <div class="col-md-4 justify-content-center d-flex align-items-center mt--sm-4">
+                                <span>
+                                     <i class="fa-solid fa-eye fa-2xl icons"></i>
+                                 </span>
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body ">
+                                    <h5 class="card-title text-align">Animation</h5>
+                                    <p class="card-text text-align"><small class="text-muted">1.1391 courses</small></p>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col-xl-3 col-lg-6  col-md-6 col-sm-12 ">
-                <div class="card mb-3 light-blue border-0" style="max-width: 540px;">
-                    <div class="row g-0">
-                        <div class="col-md-4 justify-content-center d-flex align-items-center">
-                    <span>
-                        <i class="fa-sharp fa-solid fa-atom fa-2xl"></i>
-                    </span>
-                        </div>
-                        <div class="col-md-8">
-                            <div class="card-body ">
-                                <h5 class="card-title">Science</h5>
-                                <p class="card-text"><small class="text-muted">1.1391 courses</small></p>
-                            </div>
-                        </div>
+            <div class=" mt-4 col">
+                <p class="justify-content-center d-flex align-items-center  ">we have more category here.</p>
+                <div class="mb-9 justify-content-center d-flex align-items-center"><a href="#">Browse all</a></div>
+            </div>
+        </div>
+    </section>
+    <!--End Category-->
+    <!--Get Start-->
+    <section id="start" class=" bg-section ">
+        <div class="m-lr-4">
+            <div class="row  d-flex justify-content-around">
+                <div class="col-lg-5 col-sm-12 mb-3 text-align-sm ">
+                    <h1 class="mt-5 blue2">Become an Instructor</h1>
+                    <p class="mt-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet assumenda at eos hic
+                        laudantium nisi non
+                        nulla reprehenderit sit vero.</p>
+
+                    <ul class="list-unstyled newlist">
+                        <li>Item 1</li>
+                        <li>Item 2</li>
+                        <li>Item 3</li>
+                    </ul>
+                    <button class="btn btn-primary  mt-6 mb-4 btn-border-nav">Get Start</button>
+                </div>
+                <div class="col-lg-5 col-sm-12 flex-prop ">
+                    <img src="./Assets/img/student.JPG" class="transform width100" alt="...">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--End Get Start-->
+    <!--Education-->
+    <section id="education" class="m-lr-4 mt-6">
+        <h1 class="blue2 text-center  ">We Have Best Education</h1>
+        <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam aspernatur assumenda
+            dolores, exercitationem
+            minus modi possimus qui quibusdam quo rem!</p>
+        <div class="row  d-flex  justify-content-around mt-6">
+            <div class="card col-lg-3 col-md-5 col-sm-12 ml" style="width: 18rem;">
+            <span class="mt-9 d-flex justify-content-center align-items-center">
+                <i class="fa-sharp fa-solid fa-music fa-xl d-flex justify-content-center align-items-center circle-icon"></i>
+            </span>
+                <div class="card-body text-align">
+                    <h5 class="card-title blue2 text-center ">Music Class</h5>
+                    <p class="card-text text-center fs-m ">Some quick example text to build on the card title and make
+                        up
+                        the
+                        bulk
+                        of the
+                        card's content.</p>
+                </div>
+            </div>
+            <div class="card col-lg-3 col-md-5 col-sm-12 ml" style="width: 18rem;">
+            <span class="mt-9 d-flex justify-content-center align-items-center">
+                <i class="fa-sharp fa-solid fa-calculator fa-xl d-flex justify-content-center align-items-center circle-icon"></i>
+            </span>
+                <div class="card-body">
+                    <h5 class="card-title blue2 text-center">Math Class</h5>
+                    <p class="card-text text-center fs-m">Some quick example text to build on the card title and make up
+                        the
+                        bulk
+                        of the
+                        card's content.</p>
+                </div>
+            </div>
+            <div class="card col-lg-3 col-md-5 col-sm-12 ml" style="width: 18rem;">
+            <span class="mt-9 d-flex justify-content-center align-items-center">
+                <i class="fa-sharp fa-solid fa-book-open fa-xl d-flex justify-content-center align-items-center circle-icon"></i>
+            </span>
+                <div class="card-body">
+                    <h5 class="card-title blue2 text-center">English Class</h5>
+                    <p class="card-text text-center fs-m">Some quick example text to build on the card title and make up
+                        the
+                        bulk
+                        of the
+                        card's content.</p>
+                </div>
+            </div>
+            <!-- </div>-->
+            <div class="row justify-content-around d-flex mt-4">
+                <div class="card col-lg-3 col-md-5 col-sm-12 ml" style="width: 18rem;">
+            <span class="mt-9 d-flex justify-content-center align-items-center">
+                <i class="fa-sharp fa-solid fa-book fa-xl d-flex justify-content-center align-items-center circle-icon"></i>
+            </span>
+                    <div class="card-body">
+                        <h5 class="card-title blue2 text-center">Reading a Kids</h5>
+                        <p class="card-text text-center fs-m">Some quick example text to build on the card title and
+                            make up
+                            the
+                            bulk
+                            of the
+                            card's content.</p>
+                    </div>
+                </div>
+                <div class="card col-lg-3 col-md-5 col-sm-12 ml" style="width: 18rem;">
+            <span class="mt-9 d-flex justify-content-center align-items-center">
+                <i class="fa-sharp fa-solid fa-clock-rotate-left fa-xl d-flex justify-content-center align-items-center circle-icon"></i>
+            </span>
+                    <div class="card-body">
+                        <h5 class="card-title blue2 text-center">History Class</h5>
+                        <p class="card-text text-center fs-m">Some quick example text to build on the card title and
+                            make up
+                            the
+                            bulk
+                            of the
+                            card's content.</p>
+                    </div>
+                </div>
+                <div class="card col-lg-3 col-md-5 col-sm-12 ml" style="width: 18rem;">
+            <span class="mt-9 d-flex justify-content-center align-items-center">
+                <i class="fa-sharp fa-solid fa-music fa-xl d-flex justify-content-center align-items-center circle-icon"></i>
+            </span>
+                    <div class="card-body">
+                        <h5 class="card-title blue2 text-center">Music</h5>
+                        <p class="card-text text-center fs-m">Some quick example text to build on the card title and
+                            make up
+                            the
+                            bulk
+                            of the
+                            card's content.</p>
                     </div>
                 </div>
             </div>
-            <div class="col-xl-3 col-lg-6  col-md-6 col-sm-12 ">
-                <div class="card mb-3 light-blue border-0" style="max-width: 540px; ">
-                    <div class="row g-0">
-                        <div class="col-md-4 justify-content-center d-flex align-items-center">
-                    <span>
-                        <i class="fa-sharp fa-solid fa-atom fa-2xl"></i>
-                    </span>
+        </div>
+    </section>
+    <!--End Education-->
+    <!--Course-->
+    <section id="courses" class=" bg-section mt-6">
+        <div class="m-lr-4  ">
+            <h1 class="blue2 text-center pt-10">The Right Courses For You</h1>
+            <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam aspernatur
+                assumenda
+                dolores, exercitationem
+                minus modi possimus qui quibusdam quo rem!</p>
+            <div> <!--class="row  d-flex  justify-content-around mt-4"-->
+                <div class="row row-cols-1 row-cols-md-3 g-4 ">
+                    <div class="col-lg-4 col-md-6 col-sm-10 mt-4 ">
+                        <div class="card h-100 shadow">
+                            <img src="./Assets/img/child1.jpg" class="card-img-top img-fixed-size" alt="...">
+                            <div class="card-footer d-flex justify-content-between align-items-center bg-white border-0">
+                                <div class="justify-content-end"><i class="fa-solid fa-book fa-2xs "><a href="#"
+                                                                                                        class="fs-smaller txt-decoration">43
+                                    lesson</a></i></div>
+                                <div class="justify-content-start  align-items-center yellow fs-smaller"><i
+                                        class="fa-solid fa-star fa-2xs yellow"></i>4.8
+                                </div>
+                            </div>
+                            <div class="card-body pt-0">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text fs-m">This is a wider card with supporting text below as a natural
+                                    lead-in to additional content. This card has even longer content than the first to
+                                    show
+                                    that equal height action.</p>
+                            </div>
+                            <div class="short-line m-lr-4"></div>
+                            <div class="card-footer d-flex justify-content-between align-items-center bg-white border-0">
+                                <div class="justify-content-start  align-items-center fs-smaller">87.00$</div>
+                                <div class="justify-content-end  "><a href="#" class="fs-smaller txt-decoration">Learn
+                                    More</a></div>
+                            </div>
                         </div>
-                        <div class="col-md-8">
-                            <div class="card-body ">
-                                <h5 class="card-title">Science</h5>
-                                <p class="card-text"><small class="text-muted">1.1391 courses</small></p>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-10 mt-4">
+                        <div class="card h-100 shadow">
+                            <img src="./Assets/img/child2.jpg" class="card-img-top img-fixed-size" alt="...">
+                            <div class="card-footer d-flex justify-content-between align-items-center bg-white border-0">
+                                <div class="justify-content-end "><i class="fa-solid fa-book fa-2xs "><a href="#"
+                                                                                                         class="fs-smaller txt-decoration">43
+                                    lesson</a></i></div>
+                                <div class="justify-content-start  align-items-center yellow fs-smaller"><i
+                                        class="fa-solid fa-star fa-2xs yellow"></i>4.8
+                                </div>
+                            </div>
+                            <div class="card-body pt-0">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text fs-m">This is a wider card with supporting text below as a natural
+                                    lead-in to additional content. This card has even longer content than the first to
+                                    show
+                                    that equal height action.</p>
+                            </div>
+                            <div class="short-line m-lr-4"></div>
+                            <div class="card-footer d-flex justify-content-between align-items-center bg-white border-0">
+                                <div class="justify-content-start  align-items-center fs-smaller">87.00$</div>
+                                <div class="justify-content-end  "><a href="#" class="fs-smaller txt-decoration">Learn
+                                    More</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-10 mt-4">
+                        <div class="card h-100 shadow">
+                            <img src="./Assets/img/child3.jpg" class="card-img-top img-fixed-size" alt="...">
+                            <div class="card-footer d-flex justify-content-between align-items-center bg-white border-0">
+                                <div class="justify-content-end "><i class="fa-solid fa-book fa-2xs "><a href="#"
+                                                                                                         class="fs-smaller txt-decoration">43
+                                    lesson</a></i></div>
+                                <div class="justify-content-start  align-items-center yellow fs-smaller"><i
+                                        class="fa-solid fa-star fa-2xs yellow"></i>4.8
+                                </div>
+                            </div>
+                            <div class="card-body pt-0">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text fs-m">This is a wider card with supporting text below as a natural
+                                    lead-in to additional content. This card has even longer content than the first to
+                                    show
+                                    that equal height action.</p>
+                            </div>
+                            <div class="short-line m-lr-4"></div>
+                            <div class="card-footer d-flex justify-content-between align-items-center bg-white border-0">
+                                <div class="justify-content-start  align-items-center fs-smaller">87.00$</div>
+                                <div class="justify-content-end  "><a href="#" class="fs-smaller txt-decoration">Learn
+                                    More</a></div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="row pt-4">
-            <div class="col-xl-3 col-lg-6  col-md-6 col-sm-12 ">
-                <div class="card mb-3 light-blue border-0" style="max-width: 540px;">
-                    <div class="row g-0">
-                        <div class="col-md-4 justify-content-center d-flex align-items-center">
-                    <span>
-                        <i class="fa-sharp fa-solid fa-atom fa-2xl"></i>
-                    </span>
-                        </div>
-                        <div class="col-md-8">
-                            <div class="card-body ">
-                                <h5 class="card-title">Science</h5>
-                                <p class="card-text"><small class="text-muted">1.1391 courses</small></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xl-3  col-lg-6  col-md-6 col-sm-12 ">
-                <div class="card mb-3 light-blue border-0" style="max-width: 540px;">
-                    <div class="row g-0">
-                        <div class="col-md-4 justify-content-center d-flex align-items-center">
-                    <span>
-                        <i class="fa-sharp fa-solid fa-atom fa-2xl"></i>
-                    </span>
-                        </div>
-                        <div class="col-md-8">
-                            <div class="card-body ">
-                                <h5 class="card-title">Science</h5>
-                                <p class="card-text"><small class="text-muted">1.1391 courses</small></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xl-3  col-lg-6  col-md-6 col-sm-12 ">
-                <div class="card mb-3 light-blue border-0" style="max-width: 540px;">
-                    <div class="row g-0">
-                        <div class="col-md-4 justify-content-center d-flex align-items-center">
-                    <span>
-                        <i class="fa-sharp fa-solid fa-atom fa-2xl"></i>
-                    </span>
-                        </div>
-                        <div class="col-md-8">
-                            <div class="card-body ">
-                                <h5 class="card-title">Science</h5>
-                                <p class="card-text"><small class="text-muted">1.1391 courses</small></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xl-3  col-lg-6  col-md-6 col-sm-12 ">
-                <div class="card mb-3 light-blue border-0" style="max-width: 540px; ">
-                    <div class="row g-0">
-                        <div class="col-md-4 justify-content-center d-flex align-items-center">
-                    <span>
-                        <i class="fa-sharp fa-solid fa-atom fa-2xl"></i>
-                    </span>
-                        </div>
-                        <div class="col-md-8">
-                            <div class="card-body ">
-                                <h5 class="card-title">Science</h5>
-                                <p class="card-text"><small class="text-muted">1.1391 courses</small></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+    </section>
+    <!--End Course-->
+    <!--Enroll Now-->
+    <section class="mt-6">
+        <div class=" hero bg-img">
+            <div class="text-light text-hero">
+                <h4>Education for tomorrow Leaders</h4>
+                <p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum, vero.</p>
+                <button class="btn btn-primary  btn-padding fs-m mt-4 btn-border-nav  ">Enroll Now</button>
+
+
             </div>
         </div>
-        <div class=" mt-4">
-            <p class="justify-content-center d-flex align-items-center mb-9 ">we have more category here. <a href="#">Browse
-                all</a></p></div>
-    </div>
-    <!--
-<i class="fa-light fa-atom"></i>
-<i class="fa-solid fa-briefcase"></i>
-<i class="fa-solid fa-calculator"></i>
-<i class="fa-light fa-pen"></i>
-<i class="fa-regular fa-music"></i>
-<i class="fa-light fa-arrows-spin"></i>
-<i class="fa-regular fa-camera"></i>
-<i class="fa-solid fa-eye"></i>
-    -->
-</section>
-<!--End Category-->
-<!--Get Start-->
-<section class=" bg-section ">
-    <div class="m-lr-4">
-        <div class="row  d-flex justify-content-around">
-            <div class="col-lg-5 col-sm-12 ">
-                <h1 class="mt-5 blue2">Become an Instructor</h1>
-                <p class="mt-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet assumenda at eos hic
+    </section>
+    <!--End Enroll Now-->
+    <!--About Us------>
+    <section id="aboutus" class="m-lr-4">
+        <div class="row">
+            <div class="col-xl-5 col-md-12 text-centerr">
+                <h1 class="mt-5 blue2">About Us</h1>
+                <p class="mt-6 fs-smaller">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet assumenda at
+                    eos
+                    hic
                     laudantium nisi non
                     nulla reprehenderit sit vero.</p>
-
-                <ul class="list-unstyled newlist">
+                <ul class="list-unstyled newlist fs-smaller">
                     <li>Item 1</li>
                     <li>Item 2</li>
                     <li>Item 3</li>
                 </ul>
-                <button class="btn btn-primary btn-rounded mt-6 mb-4">Get Start</button>
-            </div>
-            <div class="col-lg-5 col-sm-12 ">
-                <img src="./Assets/img/student.JPG" class="transform" alt="...">
-            </div>
-        </div>
-    </div>
-</section>
-<!--End Get Start-->
-<!--Education-->
-<section class="m-lr-4 mt-6">
-    <h1 class="blue2 text-center ">We Have Best Education</h1>
-    <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam aspernatur assumenda
-        dolores, exercitationem
-        minus modi possimus qui quibusdam quo rem!</p>
-    <div class="row  d-flex  justify-content-around mt-4">
-        <div class="card col-lg-3 col-md-5 col-sm-12 ml" style="width: 18rem;">
-            <span class="mt-9 d-flex justify-content-center align-items-center">
-                <i class="fa-sharp fa-solid fa-atom fa-2xl d-flex justify-content-center align-items-center circle-icon"></i>
-            </span>
-            <div class="card-body">
-                <h5 class="card-title blue2 text-center">Card title</h5>
-                <p class="card-text text-center fs-m">Some quick example text to build on the card title and make up the
-                    bulk
-                    of the
-                    card's content.</p>
-            </div>
-        </div>
-        <div class="card col-lg-3 col-md-5 col-sm-12 ml" style="width: 18rem;">
-            <span class="mt-9 d-flex justify-content-center align-items-center">
-                <i class="fa-sharp fa-solid fa-atom fa-2xl d-flex justify-content-center align-items-center circle-icon"></i>
-            </span>
-            <div class="card-body">
-                <h5 class="card-title blue2 text-center">Card title</h5>
-                <p class="card-text text-center fs-m">Some quick example text to build on the card title and make up the
-                    bulk
-                    of the
-                    card's content.</p>
-            </div>
-        </div>
-        <div class="card col-lg-3 col-md-5 col-sm-12 ml" style="width: 18rem;">
-            <span class="mt-9 d-flex justify-content-center align-items-center">
-                <i class="fa-sharp fa-solid fa-atom fa-2xl d-flex justify-content-center align-items-center circle-icon"></i>
-            </span>
-            <div class="card-body">
-                <h5 class="card-title blue2 text-center">Card title</h5>
-                <p class="card-text text-center fs-m">Some quick example text to build on the card title and make up the
-                    bulk
-                    of the
-                    card's content.</p>
-            </div>
-        </div>
-        <!-- </div>
-         <div class="row justify-content-around d-flex mt-4">-->
-        <div class="card col-lg-3 col-md-5 col-sm-12 ml" style="width: 18rem;">
-            <span class="mt-9 d-flex justify-content-center align-items-center">
-                <i class="fa-sharp fa-solid fa-atom fa-2xl d-flex justify-content-center align-items-center circle-icon"></i>
-            </span>
-            <div class="card-body">
-                <h5 class="card-title blue2 text-center">Card title</h5>
-                <p class="card-text text-center fs-m">Some quick example text to build on the card title and make up the
-                    bulk
-                    of the
-                    card's content.</p>
-            </div>
-        </div>
-        <div class="card col-lg-3 col-md-5 col-sm-12 ml" style="width: 18rem;">
-            <span class="mt-9 d-flex justify-content-center align-items-center">
-                <i class="fa-sharp fa-solid fa-atom fa-2xl d-flex justify-content-center align-items-center circle-icon"></i>
-            </span>
-            <div class="card-body">
-                <h5 class="card-title blue2 text-center">Card title</h5>
-                <p class="card-text text-center fs-m">Some quick example text to build on the card title and make up the
-                    bulk
-                    of the
-                    card's content.</p>
-            </div>
-        </div>
-        <div class="card col-lg-3 col-md-5 col-sm-12 ml" style="width: 18rem;">
-            <span class="mt-9 d-flex justify-content-center align-items-center">
-                <i class="fa-sharp fa-solid fa-atom fa-2xl d-flex justify-content-center align-items-center circle-icon"></i>
-            </span>
-            <div class="card-body">
-                <h5 class="card-title blue2 text-center">Card title</h5>
-                <p class="card-text text-center fs-m">Some quick example text to build on the card title and make up the
-                    bulk
-                    of the
-                    card's content.</p>
-            </div>
-        </div>
-    </div>
-</section>
-<!--End Education-->
-<!--Course-->
-<section class=" bg-section mt-6">
-    <div class="m-lr-4  ">
-        <h1 class="blue2 text-center pt-10">The Right Courses For You</h1>
-        <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam aspernatur assumenda
-            dolores, exercitationem
-            minus modi possimus qui quibusdam quo rem!</p>
-        <div> <!--class="row  d-flex  justify-content-around mt-4"-->
-            <div class="row row-cols-1 row-cols-md-3 g-4">
-                <div class="col-lg-4 col-md-6 col-sm-10 mt-4">
-                    <div class="card h-100">
-                        <img src="./Assets/img/child1.jpg" class="card-img-top img-fixed-size" alt="...">
-                        <div class="card-footer d-flex justify-content-between align-items-center bg-white border-0">
-                            <div class="justify-content-end "><i class="fa-solid fa-book fa-2xs "><a href="#"
-                                                                                                     class="fs-smaller">43
-                                lesson</a></i></div>
-                            <div class="justify-content-start  align-items-center yellow fs-smaller"><i
-                                    class="fa-solid fa-star fa-2xs yellow"></i>4.8
-                            </div>
-                        </div>
-                        <div class="card-body pt-0">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text fs-m">This is a wider card with supporting text below as a natural
-                                lead-in to additional content. This card has even longer content than the first to show
-                                that equal height action.</p>
-                        </div>
-                        <div class="short-line m-lr-4"></div>
-                        <div class="card-footer d-flex justify-content-between align-items-center bg-white border-0">
-                            <div class="justify-content-start  align-items-center fs-smaller">87.00$</div>
-                            <div class="justify-content-end  "><a href="#" class="fs-smaller">Learn More</a></div>
-                        </div>
+                <div class="row mt-4">
+                    <div class="col-lg-4 col-md-12">
+                        <h6 class="blue2">204+</h6>
+                        <p class="fs-m">No. Students</p>
+                    </div>
+                    <div class="col-lg-4 col-md-12">
+                        <h6 class="blue2">204+</h6>
+                        <p class="fs-m">No. Students</p>
+                    </div>
+                    <div class="col-lg-4 col-md-12">
+                        <h6 class="blue2">204+</h6>
+                        <p class="fs-m">No. Students</p>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-10 mt-4">
-                    <div class="card h-100">
-                        <img src="./Assets/img/child2.jpg" class="card-img-top img-fixed-size" alt="...">
-                        <div class="card-footer d-flex justify-content-between align-items-center bg-white border-0">
-                            <div class="justify-content-end "><i class="fa-solid fa-book fa-2xs "><a href="#"
-                                                                                                     class="fs-smaller">43
-                                lesson</a></i></div>
-                            <div class="justify-content-start  align-items-center yellow fs-smaller"><i
-                                    class="fa-solid fa-star fa-2xs yellow"></i>4.8
-                            </div>
-                        </div>
-                        <div class="card-body pt-0">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text fs-m">This is a wider card with supporting text below as a natural
-                                lead-in to additional content. This card has even longer content than the first to show
-                                that equal height action.</p>
-                        </div>
-                        <div class="short-line m-lr-4"></div>
-                        <div class="card-footer d-flex justify-content-between align-items-center bg-white border-0">
-                            <div class="justify-content-start  align-items-center fs-smaller">87.00$</div>
-                            <div class="justify-content-end  "><a href="#" class="fs-smaller">Learn More</a></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-10 mt-4">
-                    <div class="card h-100">
-                        <img src="./Assets/img/child3.jpg" class="card-img-top img-fixed-size" alt="...">
-                        <div class="card-footer d-flex justify-content-between align-items-center bg-white border-0">
-                            <div class="justify-content-end "><i class="fa-solid fa-book fa-2xs "><a href="#"
-                                                                                                     class="fs-smaller">43
-                                lesson</a></i></div>
-                            <div class="justify-content-start  align-items-center yellow fs-smaller"><i
-                                    class="fa-solid fa-star fa-2xs yellow"></i>4.8
-                            </div>
-                        </div>
-                        <div class="card-body pt-0">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text fs-m">This is a wider card with supporting text below as a natural
-                                lead-in to additional content. This card has even longer content than the first to show
-                                that equal height action.</p>
-                        </div>
-                        <div class="short-line m-lr-4"></div>
-                        <div class="card-footer d-flex justify-content-between align-items-center bg-white border-0">
-                            <div class="justify-content-start  align-items-center fs-smaller">87.00$</div>
-                            <div class="justify-content-end  "><a href="#" class="fs-smaller">Learn More</a></div>
-                        </div>
-                    </div>
+                <div class="mb-4">
+                    <button class="btn btn-primary btn-rounded  btn-border-nav border-0 mt-6 mb-4 ">ADMISSION</button>
+                    <button type="button" class="btn btn-outline-primary btn-border-nav border-red-25">Learn More
+                    </button>
                 </div>
             </div>
-        </div>
-    </div>
-</section>
-<!--End Course-->
-<!--Enroll Now-->
-<section class="mt-6">
-    <div class=" hero bg-img">
-        <div class="text-light text-hero">
-            <h4>Education for tomorrow Leaders</h4>
-            <p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum, vero.</p>
-            <!--
-                        <button type="button" class="btn btn-primary btn-padding fs-1">Enroll Now</button>
-            -->
-            <button class="btn btn-primary btn-rounded btn-padding fs-1 mt-4 border-red-25 ">Enroll Now</button>
-
-        </div>
-    </div>
-</section>
-<!--End Enroll Now-->
-<!--About Us------>
-<section class="m-lr-4">
-    <div class="row">
-        <div class="col-xl-5 col-md-12">
-            <h1 class="mt-5 blue2">About Us</h1>
-            <p class="mt-6 fs-smaller">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet assumenda at eos
-                hic
-                laudantium nisi non
-                nulla reprehenderit sit vero.</p>
-            <ul class="list-unstyled newlist fs-smaller">
-                <li>Item 1</li>
-                <li>Item 2</li>
-                <li>Item 3</li>
-            </ul>
-            <div class="row mt-4">
-                <div class="col-lg-4 col-md-12">
-                    <h6 class="blue2">204+</h6>
-                    <p class="fs-m">No. Students</p>
-                </div>
-                <div class="col-lg-4 col-md-12">
-                    <h6 class="blue2">204+</h6>
-                    <p class="fs-m">No. Students</p>
-                </div>
-                <div class="col-lg-4 col-md-12">
-                    <h6 class="blue2">204+</h6>
-                    <p class="fs-m">No. Students</p>
-                </div>
-            </div>
-            <button class="btn btn-primary btn-rounded border-0 mt-6 mb-4">ADMISSION</button>
-            <button type="button" class="btn btn-outline-primary border-red-25">Learn More</button>
-        </div>
-        <div class="col-xl-4 col-md-12 mt-9">
-            <video class="vid box-shadow video-size" controls autoplay>
-                <source src="./Assets/img/technology_in_education.mp4" type="video/mp4"/>
-            </video>
-        </div>
-    </div>
-</section>
-<!--End About Us-->
-
-<!--Right Courses-->
-<section class=" bg-section mt-6">
-    <div class="m-lr-4">
-        <h1 class="blue2 text-center pt-10">School News</h1>
-        <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam aspernatur assumenda
-            dolores, exercitationem
-            minus modi possimus qui quibusdam quo rem!</p>
-        <div class="row d-flex justify-content-around mt-6">
-            <div class="col-lg-6 col-md-12 card mb-3 ml" style="max-width: 540px;">
-                <div class="row g-0">
-                    <div class="col-md-4">
-                        <img src="./Assets/img/h2.jpg" class="img-fluid rounded-start img-height" alt="...">
-                    </div>
-                    <div class="col-md-8">
-                        <div class="card-body">
-                            <h5 class="card-title blue2 fs-smaller">Education for Tomorrow's Leaders</h5>
-                            <div class="fs-smaller gray mb-2"><i class="fa-solid fa-calendar-days fa-xs gray"></i> June
-                                22,
-                                2020 <i class="fa-solid fa-user fa-xs gray"></i> Admin
-                            </div>
-                            <p class="card-text fs-m">This is a wider card with supporting text below as a natural
-                                lead-in
-                                to
-                                additional content. This content is a little bit longer.</p>
-                            <div class="justify-content-end  "><a href="#" class="fs-smaller">Learn More</a></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-6 col-md-12 card mb-3" style="max-width: 540px;">
-                <div class="row g-0">
-                    <div class="col-md-4">
-                        <img src="./Assets/img/h2.jpg" class="img-fluid rounded-start img-height" alt="...">
-                    </div>
-                    <div class="col-md-8">
-                        <div class="card-body">
-                            <h5 class="card-title blue2 fs-smaller">Education for Tomorrow's Leaders</h5>
-                            <div class="fs-smaller gray mb-2"><i class="fa-solid fa-calendar-days fa-xs gray"></i> June
-                                22,
-                                2020 <i class="fa-solid fa-user fa-xs gray"></i> Admin
-                            </div>
-                            <p class="card-text fs-m">This is a wider card with supporting text below as a natural
-                                lead-in
-                                to
-                                additional content. This content is a little bit longer.</p>
-                            <div class="justify-content-end  "><a href="#" class="fs-smaller">Learn More</a></div>
-                        </div>
-                    </div>
-                </div>
+            <div class="col-xl-4 col-md-12 mt-9">
+                <video class="vid box-shadow video-size" controls autoplay>
+                    <source src="./Assets/img/technology_in_education.mp4" type="video/mp4"/>
+                </video>
             </div>
         </div>
-    </div>
-</section>
-<!--End Right Courses-->
+    </section>
+    <!--End About Us-->
 
-<!--Pricing-->
-<section class="m-lr-4 mt-6">
-    <h1 class="blue2 text-center ">Pricing</h1>
-    <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam aspernatur assumenda
-        dolores, exercitationem
-        minus modi possimus qui quibusdam quo rem!</p>
-    <div class="row  d-flex text-center justify-content-around mt-6">
-        <div class="card col-lg-3 col-md-5 col-sm-12 ml" style="width: 18rem;">
-            <div class="card-body ">
-                <h5 class="card-title blue2 text-center">Business</h5>
-                <div class="text-center"><h5 class="blue2 ">99.99$<span class="fs-m gray">/month</span></h5></div>
-                <p class="card-text text-center fs-m mt-4 mb-4">Some quick example text to build on the card title and
-                    make up the
-                    bulk
-                    of the
-                    card's content.</p>
-                <button type="button" class="btn btn-outline-primary border-red-25 ">Learn More</button>
-
-            </div>
-        </div>
-        <div class="card col-lg-3 col-md-5 col-sm-12 ml" style="width: 18rem;">
-            <div class="card-body ">
-                <h5 class="card-title blue2 text-center">Business</h5>
-                <div class="text-center"><h5 class="blue2 ">99.99$<span class="fs-m gray">/month</span></h5></div>
-                <p class="card-text text-center fs-m mt-4 mb-4">Some quick example text to build on the card title and
-                    make up the
-                    bulk
-                    of the
-                    card's content.</p>
-                <button type="button" class="btn btn-outline-primary border-red-25 ">Learn More</button>
-
-            </div>
-        </div>
-        <div class="card col-lg-3 col-md-5 col-sm-12 ml" style="width: 18rem;">
-            <div class="card-body ">
-                <h5 class="card-title blue2 text-center">Business</h5>
-                <div class="text-center"><h5 class="blue2 ">99.99$<span class="fs-m gray">/month</span></h5></div>
-                <p class="card-text text-center fs-m mt-4 mb-4">Some quick example text to build on the card title and
-                    make up the
-                    bulk
-                    of the
-                    card's content.</p>
-                <button type="button" class="btn btn-outline-primary border-red-25 ">Learn More</button>
-
-            </div>
-        </div>
-    </div>
-</section>
-<!--End Pricing-->
-<!--Testimonials-->
-<section class="bg-section">
-    <div id="testimonialCarousel" class="carousel slide" data-ride="carousel">
-        <!-- Indicators -->
-        <ol class="carousel-indicators black">
-            <li data-target="#testimonialCarousel" data-slide-to="0" class="dots active"></li>
-            <li data-target="#testimonialCarousel" data-slide-to="1" class="dots"></li>
-            <li data-target="#testimonialCarousel" data-slide-to="2" class="dots"></li>
-        </ol>
-
-        <!-- Slides -->
-        <div class="carousel-inner">
-            <!-- Slide 1 -->
-            <div class="carousel-item active">
-                <div class="m-lr-4 mt-6">
-                    <h1 class="blue2 text-center ">Testimonials</h1>
-                    <p class="text-center mt-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam
-                        aspernatur assumenda
-                        dolores, exercitationem minus modi possimus qui quibusdam quo rem!</p>
-                    <div class="text-center mb-4 mt-4">
-                        <img src="./Assets/img/profile22.JPG" class="border-50 fs-smaller resize-img" alt="...">
-                    </div>
-                    <h5 class="blue2 text-center">Mohammad Kourdy</h5>
-                    <p class="text-center">Full Stack Engineer</p>
-                </div>
-            </div>
-
-            <!-- Slide 2 (Add your content here) -->
-            <div class="carousel-item">
-                <div class="m-lr-4 mt-6">
-                    <h1 class="blue2 text-center ">Testimonials</h1>
-                    <p class="text-center mt-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam
-                        aspernatur assumenda
-                        dolores, exercitationem minus modi possimus qui quibusdam quo rem!</p>
-                    <div class="text-center mb-4 mt-4">
-                        <img src="./Assets/img/profile2.jpg" class="border-50 fs-smaller resize-img" alt="...">
-                    </div>
-                    <h5 class="blue2 text-center">Wael Fawal</h5>
-                    <p class="text-center">Full Stack Engineer</p>
-                </div>
-            </div>
-
-            <!-- Slide 3 (Add your content here) -->
-            <div class="carousel-item">
-                <div class="m-lr-4 mt-6">
-                    <h1 class="blue2 text-center ">Testimonials</h1>
-                    <p class="text-center mt-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam
-                        aspernatur assumenda
-                        dolores, exercitationem minus modi possimus qui quibusdam quo rem!</p>
-                    <div class="text-center mb-4 mt-4">
-                        <img src="./Assets/img/profile3.webp" class="border-50 fs-smaller resize-img" alt="...">
-                    </div>
-                    <h5 class="blue2 text-center">Riham Aji</h5>
-                    <p class="text-center">FrontEnd Engineer</p>
-                </div>
-            </div>
-        </div>
-
-        <!-- Controls -->
-        <a class="carousel-control-prev" href="#testimonialCarousel" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#testimonialCarousel" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-        </a>
-    </div>
-</section>
-
-<!--Choose US-->
-<section class=" m-lr-4 mt-6">
-    <div class="row">
-        <div class="col-lg-6 image d-flex justify-content-center align-items-start ">
-            <img src="./Assets/img/h2.jpg" class="card-img-top h-500 " alt="...">
-        </div>
-        <div id="accordion" class="col-lg-6">
-            <h1 class="blue2 ">Why Choose US</h1>
-            <p class="mt-4 fs-m">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam aspernatur
+    <!--Right Courses-->
+    <section id="news" class=" bg-section mt-6">
+        <div class="m-lr-4">
+            <h1 class="blue2 text-center pt-10">School News</h1>
+            <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam aspernatur
                 assumenda
                 dolores, exercitationem
                 minus modi possimus qui quibusdam quo rem!</p>
-            <div class="card">
-                <div class="card-header" id="headingOne">
-                    <h5 class="mb-0">
-                        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne"
-                                aria-expanded="true" aria-controls="collapseOne">
-                            Good Teachers and staffs
-                        </button>
-                    </h5>
-                </div>
-
-                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
-                    <div class="card-body  row">
-                        <div class="col-lg-6 image d-flex justify-content-center align-items-start ">
-                            <img src="./Assets/img/h2.jpg" class="card-img-top h-fit h-fit <!--img-fixed-size-->"
-                                 alt="...">
+            <div class="row d-flex justify-content-around mt-6">
+                <div class="col-lg-6 col-md-12 card mb-3 ml shadow" style="max-width: 540px;">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="./Assets/img/h2.jpg" class="img-fluid rounded-start img-height" alt="...">
                         </div>
-                        <p class="fs-m col-lg-6 ">
-                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
-                            squid.
-                            3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt
-                            laborumn occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably
-                            haven't heard
-                            of them accusamus labore sustainable VHS.
-                        </p>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title blue2 fs-smaller">Education for Tomorrow's Leaders</h5>
+                                <div class="fs-smaller gray mb-2"><i class="fa-solid fa-calendar-days fa-xs gray"></i>
+                                    June
+                                    22,
+                                    2020 <i class="fa-solid fa-user fa-xs gray"></i> Admin
+                                </div>
+                                <p class="card-text fs-m">This is a wider card with supporting text below as a natural
+                                    lead-in
+                                    to
+                                    additional content. This content is a little bit longer.</p>
+                                <div class="justify-content-end  "><a href="#" class="fs-smaller">Learn More</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12 card mb-3 shadow" style="max-width: 540px;">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="./Assets/img/h2.jpg" class="img-fluid rounded-start img-height" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title blue2 fs-smaller">Education for Tomorrow's Leaders</h5>
+                                <div class="fs-smaller gray mb-2"><i class="fa-solid fa-calendar-days fa-xs gray"></i>
+                                    June
+                                    22,
+                                    2020 <i class="fa-solid fa-user fa-xs gray"></i> Admin
+                                </div>
+                                <p class="card-text fs-m">This is a wider card with supporting text below as a natural
+                                    lead-in
+                                    to
+                                    additional content. This content is a little bit longer.</p>
+                                <div class="justify-content-end  "><a href="#" class="fs-smaller">Learn More</a></div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="card">
-                <div class="card-header" id="headingThree">
-                    <h5 class="mb-0">
-                        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseTwo"
-                                aria-expanded="true" aria-controls="collapseTwo">
-                            Good Teachers and staffs
-                        </button>
-                    </h5>
-                </div>
-
-                <div id="collapseTwo" class="collapse " aria-labelledby="headingOne" data-parent="#accordion">
-                    <div class="card-body  row">
-                        <div class="col-lg-6 image d-flex justify-content-center align-items-start ">
-                            <img src="./Assets/img/h2.jpg" class="card-img-top h-fit h-fit <!--img-fixed-size-->"
-                                 alt="...">
-                        </div>
-                        <p class="fs-m col-lg-6 ">
-                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
-                            squid.
-                            3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt
-                            laborumn occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably
-                            haven't heard
-                            of them accusamus labore sustainable VHS.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-header" id="headingTwo">
-                    <h5 class="mb-0">
-                        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseThree"
-                                aria-expanded="true" aria-controls="collapseThree">
-                            Good Teachers and staffs
-                        </button>
-                    </h5>
-                </div>
-
-                <div id="collapseThree" class="collapse " aria-labelledby="headingOne" data-parent="#accordion">
-                    <div class="card-body  row">
-                        <div class="col-lg-6 image d-flex justify-content-center align-items-start ">
-                            <img src="./Assets/img/h2.jpg" class="card-img-top h-fit h-fit <!--img-fixed-size-->"
-                                 alt="...">
-                        </div>
-                        <p class="fs-m col-lg-6 ">
-                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
-                            squid.
-                            3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt
-                            laborumn occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably
-                            haven't heard
-                            of them accusamus labore sustainable VHS.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <!--sdcv-->
-            <!-- <div class="card">
-                 <div class="card-header" id="headingTwo">
-                     <h5 class="mb-0">
-                         <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo"
-                                 aria-expanded="false" aria-controls="collapseTwo">
-                             We Value Good Characters
-                         </button>
-                     </h5>
-                 </div>
-                 <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-                     <div class="card-body fs-m">
-                         Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
-                         3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt
-                         laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin
-                         coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes
-                         anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings
-                         occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard
-                         of them accusamus labore sustainable VHS.
-                     </div>
-                 </div>
-             </div>
-             <div class="card">
-                 <div class="card-header" id="headingThree">
-                     <h5 class="mb-0">
-                         <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree"
-                                 aria-expanded="false" aria-controls="collapseThree">
-                             Your Children are Safe
-                         </button>
-                     </h5>
-                 </div>
-                 <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
-                     <div class="card-body fs-m">
-                         Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
-                         3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt
-                         laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin
-                         coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes
-                         anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings
-                         occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard
-                         of them accusamus labore sustainable VHS.
-                     </div>
-                 </div>
-             </div>-->
         </div>
-    </div>
-</section>
-<!--End Testimonials-->
+    </section>
+    <!--End Right Courses-->
+
+    <!--Pricing-->
+    <section id="pricing" class="m-lr-4 mt-6">
+        <h1 class="blue2 text-center ">Pricing</h1>
+        <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam aspernatur assumenda
+            dolores, exercitationem
+            minus modi possimus qui quibusdam quo rem!</p>
+        <div class="row  d-flex text-center justify-content-around mt-6">
+            <div class="card col-lg-3 col-md-5 col-sm-12 ml" style="width: 18rem;">
+                <div class="card-body ">
+                    <h5 class="card-title blue2 text-center">Business</h5>
+                    <div class="text-center"><h5 class="blue2 ">99.99$<span class="fs-m gray">/month</span></h5></div>
+                    <p class="card-text text-center fs-m mt-4 mb-4">Some quick example text to build on the card title
+                        and
+                        make up the
+                        bulk
+                        of the
+                        card's content.</p>
+                    <button type="button" class="btn btn-outline-primary btn-border-nav border-red-25 ">Learn More
+                    </button>
+
+                </div>
+            </div>
+            <div class="card col-lg-3 col-md-5 col-sm-12 ml" style="width: 18rem;">
+                <div class="card-body ">
+                    <h5 class="card-title blue2 text-center">Business</h5>
+                    <div class="text-center"><h5 class="blue2 ">99.99$<span class="fs-m gray">/month</span></h5></div>
+                    <p class="card-text text-center fs-m mt-4 mb-4">Some quick example text to build on the card title
+                        and
+                        make up the
+                        bulk
+                        of the
+                        card's content.</p>
+                    <button type="button" class="btn btn-outline-primary btn-border-nav border-red-25 ">Learn More
+                    </button>
+
+                </div>
+            </div>
+            <div class="card col-lg-3 col-md-5 col-sm-12 ml" style="width: 18rem;">
+                <div class="card-body ">
+                    <h5 class="card-title blue2 text-center">Business</h5>
+                    <div class="text-center"><h5 class="blue2 ">99.99$<span class="fs-m gray">/month</span></h5></div>
+                    <p class="card-text text-center fs-m mt-4 mb-4">Some quick example text to build on the card title
+                        and
+                        make up the
+                        bulk
+                        of the
+                        card's content.</p>
+                    <button type="button" class="btn btn-outline-primary btn-border-nav border-red-25 ">Learn More
+                    </button>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--End Pricing-->
+
+    <!--Testimonials-->
+    <section id="testimonials" class="bg-section">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                        class="dots active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" class="dots"
+                        aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" class="dots"
+                        aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="m-lr-4 mt-6">
+                        <h1 class="blue2 text-center ">Testimonials</h1>
+                        <p class="text-center mt-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam
+                            aspernatur assumenda
+                            dolores, exercitationem minus modi possimus qui quibusdam quo rem!</p>
+                        <div class="text-center mb-4 mt-4">
+                            <img src="./Assets/img/profile22.JPG" class="border-50 fs-smaller resize-img" alt="...">
+                        </div>
+                        <h5 class="blue2 text-center">Mohammad Kourdy</h5>
+                        <p class="text-center">Full Stack Engineer</p>
+                    </div>
+                </div>
+                <!-- Slide 2 (Add your content here) -->
+                <div class="carousel-item">
+                    <div class="m-lr-4 mt-6">
+                        <h1 class="blue2 text-center ">Testimonials</h1>
+                        <p class="text-center mt-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam
+                            aspernatur assumenda
+                            dolores, exercitationem minus modi possimus qui quibusdam quo rem!</p>
+                        <div class="text-center mb-4 mt-4">
+                            <img src="./Assets/img/profile2.jpg" class="border-50 fs-smaller resize-img" alt="...">
+                        </div>
+                        <h5 class="blue2 text-center">Wael AlFawal</h5>
+                        <p class="text-center">Full Stack Engineer</p>
+                    </div>
+                </div>
+
+                <!-- Slide 3 (Add your content here) -->
+                <div class="carousel-item">
+                    <div class="m-lr-4 mt-6">
+                        <h1 class="blue2 text-center ">Testimonials</h1>
+                        <p class="text-center mt-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam
+                            aspernatur assumenda
+                            dolores, exercitationem minus modi possimus qui quibusdam quo rem!</p>
+                        <div class="text-center mb-4 mt-4">
+                            <img src="./Assets/img/profile3.webp" class="border-50 fs-smaller resize-img" alt="...">
+                        </div>
+                        <h5 class="blue2 text-center">Riham Aji</h5>
+                        <p class="text-center">FrontEnd Engineer</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+    <!--End Testimonials-->
+
+    <!--Choose US-->
+    <section id="chooseus" class=" m-lr-4 mt-6 mb-4">
+        <div class="row">
+            <div class="col-lg-6 image d-flex justify-content-center align-items-start ">
+                <img src="./Assets/img/lab2.jpg" class="card-img-top " alt="...">
+            </div>
+            <div id="accordion" class="col-lg-6">
+                <h1 class="blue2">Why Choose US</h1>
+                <p class="mt-4 fs-m">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam aspernatur
+                    assumenda
+                    dolores, exercitationem
+                    minus modi possimus qui quibusdam quo rem!</p>
+                <div class="accordion" id="accordionExample">
+                    <div class=" accordion-item ">
+                        <div class="accordion-header color-white bg-blue2  " id="headingOne">
+                            <button class="btn btn-link txt-decoration accordion-button bg-blue2"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
+                                    aria-controls="collapseOne">
+                                Good Teachers and staffs
+                            </button>
+                        </div>
+
+                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                             data-parent="#accordion">
+                            <div class="card-body  row">
+                                <div class="col-lg-6 image d-flex justify-content-center align-items-start ">
+                                    <img src="./Assets/img/lab3.jpg"
+                                         class="card-img-top h-fit h-fit "
+                                         alt="...">
+                                </div>
+                                <p class="fs-m col-lg-6 ">
+                                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
+                                    richardson ad
+                                    squid.
+                                    3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa
+                                    nesciunt
+                                    laborumn occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you
+                                    probably
+                                    haven't heard
+                                    of them accusamus labore sustainable VHS.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-header" id="headingThree">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link txt-decoration accordion-button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseTwo"
+                                        aria-expanded="true" aria-controls="collapseTwo">
+                                    We Value Good Characters
+                                </button>
+                            </h5>
+                        </div>
+
+                        <div id="collapseTwo" class="collapse " aria-labelledby="headingOne" data-parent="#accordion">
+                            <div class="card-body  row">
+                                <div class="col-lg-6 image d-flex justify-content-center align-items-start ">
+                                    <img src="./Assets/img/lab11.jpg"
+                                         class="card-img-top h-fit "
+                                         alt="...">
+                                </div>
+                                <p class="fs-m col-lg-6 ">
+                                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
+                                    richardson ad
+                                    squid.
+                                    3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa
+                                    nesciunt
+                                    laborumn occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you
+                                    probably
+                                    haven't heard
+                                    of them accusamus labore sustainable VHS.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-header" id="headingTwo">
+                            <button class="btn btn-link txt-decoration accordion-button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseThree"
+                                    aria-expanded="true" aria-controls="collapseThree">
+                                Your Children are Safe
+                            </button>
+                        </div>
+
+                        <div id="collapseThree" class="collapse " aria-labelledby="headingOne" data-parent="#accordion">
+                            <div class="card-body  row">
+                                <div class="col-lg-6 image d-flex justify-content-center align-items-start ">
+                                    <img src="./Assets/img/lab2.jpg"
+                                         class="card-img-top h-fit h-fit "
+                                         alt="...">
+                                </div>
+                                <p class="fs-m col-lg-6 ">
+                                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
+                                    richardson ad
+                                    squid.
+                                    3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa
+                                    nesciunt
+                                    laborumn occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you
+                                    probably
+                                    haven't heard
+                                    of them accusamus labore sustainable VHS.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--End Choose US-->
+
+</div>
+<!--End Hero & Sections-->
+
 </body>
 <!-- Footer -->
 <footer class=" text-lg-start bg-blue2 text-white text-muted pt-4">
-    <!-- Section: Social media -->
-    <!--<section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
-        &lt;!&ndash; Left &ndash;&gt;
-        <div class="me-5 d-none d-lg-block color-white">
-            <span>Get connected with us on social networks:</span>
-        </div>
-        &lt;!&ndash; Left &ndash;&gt;
-
-        &lt;!&ndash; Right &ndash;&gt;
-        <div>
-            <a href="" class="me-4 text-reset">
-                <i class="fab fa-facebook-f"></i>
-            </a>
-            <a href="" class="me-4 text-reset">
-                <i class="fab fa-twitter"></i>
-            </a>
-            <a href="" class="me-4 text-reset">
-                <i class="fab fa-google"></i>
-            </a>
-            <a href="" class="me-4 text-reset">
-                <i class="fab fa-instagram"></i>
-            </a>
-            <a href="" class="me-4 text-reset">
-                <i class="fab fa-linkedin"></i>
-            </a>
-            <a href="" class="me-4 text-reset">
-                <i class="fab fa-github"></i>
-            </a>
-        </div>
-        &lt;!&ndash; Right &ndash;&gt;
-    </section>-->
-    <!-- Section: Social media -->
-
-    <!-- Section: Links  -->
-    <section class="">
-        <div class="<!--container-->  m-lr-4  text-md-start mt-5">
+    <section>
+        <div class="m-lr-4  text-md-start mt-5">
             <!-- Grid row -->
             <div class="row mt-3">
                 <!-- Grid column -->
-                <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4 ">
+                <div class="col-md-12 col-lg-4 col-xl-3 mx-auto mb-4 ">
                     <!-- Content -->
                     <div class="row">
                         <div>
@@ -812,46 +871,48 @@
                         <div>
                             <h6 class="text-uppercase fw-bold mb-4 color-white mt-4">
                                 Connect </h6>
-                            <div class="row">
+                            <div class="row d-flex justify-content-between ">
+
                                 <!-- Facebook -->
-                                <div class="col-2">
-                                    <a class="btn btn-outline-light btn-floating m-1 bg-white border-50 fs-m" href="#!"
+                                <div class="col-lg-2 col-md-4 col-sm-6 fs-1">
+                                    <a class="btn btn-outline-light btn-floating  bg-white border-50 fs-m ml5" href="#!"
                                        role="button"
                                     ><i class="fab fa-facebook-f black"></i
                                     ></a>
                                 </div>
 
                                 <!-- Twitter -->
-                                <div class="col-2">
-                                    <a class="btn btn-outline-light btn-floating m-1 bg-white border-50 fs-m" href="#!"
+                                <div class="col-lg-2 col-md-4 col-sm-6">
+                                    <a class="btn btn-outline-light btn-floating  bg-white border-50 fs-m ml5" href="#!"
                                        role="button"
                                     ><i class="fab fa-twitter black"></i
                                     ></a>
                                 </div>
                                 <!-- Google -->
-                                <div class="col-2">
-                                    <a class="btn btn-outline-light btn-floating m-1 bg-white border-50 fs-m" href="#!"
+                                <div class="col-lg-2 col-md-4 col-sm-6">
+                                    <a class="btn btn-outline-light btn-floating  bg-white border-50 fs-m ml5" href="#!"
                                        role="button"
                                     ><i class="fab fa-google black"></i
                                     ></a>
                                 </div>
                                 <!-- Instagram -->
-                                <div class="col-2">
-                                    <a class="btn btn-outline-light btn-floating m-1 bg-white border-50 fs-m" href="#!"
+                                <div class="col-lg-2 col-md-4 col-sm-6">
+                                    <a class="btn btn-outline-light btn-floating  bg-white border-50 fs-m ml5" href="#!"
                                        role="button"
                                     ><i class="fab fa-instagram black"></i
                                     ></a>
                                 </div>
                                 <!-- Linkedin -->
-                                <div class="col-2">
-                                    <a class="btn btn-outline-light btn-floating m-1 bg-white border-50 fs-m" href="#!"
+                                <div class="col-lg-2 col-md-4 col-sm-6">
+                                    <a class="btn btn-outline-light btn-floating bg-white border-50 fs-m ml5" href="#!"
                                        role="button"
                                     ><i class="fab fa-linkedin-in black"></i
                                     ></a>
                                 </div>
                                 <!-- Github -->
-                                <div class="col-2">
-                                    <a class="btn btn-outline-light btn-floating m-1 bg-white border-50 fs-m " href="#!"
+                                <div class="col-lg-2 col-md-4 col-sm-6">
+                                    <a class="btn btn-outline-light btn-floating  bg-white border-50 fs-m ml5 "
+                                       href="#!"
                                        role="button"
                                     ><i class="fab fa-github black"></i
                                     ></a>
@@ -863,53 +924,57 @@
                 <!-- Grid column -->
 
                 <!-- Grid column -->
-                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                <div class="col-md-12 col-lg-2 col-xl-2 mx-auto mb-4">
                     <!-- Links -->
                     <h6 class="text-uppercase fw-bold mb-4 color-white">
                         Products
                     </h6>
                     <p>
-                        <a href="#!" class="text-reset color-blue">Bootstrap</a>
+                        <a href="#!" class=" color-blue fs-m">Bootstrap</a>
                     </p>
                     <p>
-                        <a href="#!" class="text-reset color-blue">React</a>
+                        <a href="#!" class=" color-blue fs-m">React</a>
                     </p>
                     <p>
-                        <a href="#!" class="text-reset color-blue">CSS</a>
+                        <a href="#!" class=" color-blue fs-m">CSS</a>
                     </p>
                     <p>
-                        <a href="#!" class="text-reset color-blue">HTML</a>
+                        <a href="#!" class=" color-blue fs-m">HTML</a>
                     </p>
                 </div>
                 <!-- Grid column -->
 
                 <!-- Grid column -->
-                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-4">
+                <div class="col-md-14  col-lg-3 col-xl-3 mx-auto mb-4">
                     <!-- Links -->
                     <h6 class="text-uppercase fw-bold mb-4 color-white">
-
                         Gallery
                     </h6>
                     <div class="row mb-1">
-
-                        <div class="col-lg-4"><img src="./Assets/img/750x750.jpg" class="card-img-top  " alt="...">
+                        <div class="col-lg-3 col-md-3 col-sm-3 mb-2"><img src="./Assets/img/750x750.jpg"
+                                                                          class="card-img-top  " alt="...">
                         </div>
-                        <div class="col-lg-4"><img src="./Assets/img/750x750.jpg" class="card-img-top " alt="..."></div>
-                        <div class="col-lg-4"><img src="./Assets/img/750x750.jpg" class="card-img-top " alt="..."></div>
+                        <div class="col-lg-3 col-md-3 col-sm-3 mb-2"><img src="./Assets/img/750x750.jpg"
+                                                                          class="card-img-top " alt="..."></div>
+                        <div class="col-lg-3 col-md-3 col-sm-3 mb-2"><img src="./Assets/img/750x750.jpg"
+                                                                          class="card-img-top " alt="..."></div>
                     </div>
                     <div class="row">
 
-                        <div class="col-lg-4"><img src="./Assets/img/750x750.jpg" class="card-img-top  " alt="...">
+                        <div class="col-lg-3 col-md-3  col-sm-3 mb-2"><img src="./Assets/img/750x750.jpg"
+                                                                           class="card-img-top  " alt="...">
                         </div>
-                        <div class="col-lg-4"><img src="./Assets/img/750x750.jpg" class="card-img-top " alt="..."></div>
-                        <div class="col-lg-4"><img src="./Assets/img/750x750.jpg" class="card-img-top " alt="..."></div>
+                        <div class="col-lg-3 col-md-3 col-sm-3 mb-2"><img src="./Assets/img/750x750.jpg"
+                                                                          class="card-img-top " alt="..."></div>
+                        <div class="col-lg-3 col-md-3  col-sm-3 mb-2"><img src="./Assets/img/750x750.jpg"
+                                                                           class="card-img-top " alt="..."></div>
 
                     </div>
                 </div>
                 <!-- Grid column -->
 
                 <!-- Grid column -->
-                <div class="col-lg-2 col-md-3 col-xl-2 mx-auto mb-md-0 mb-4">
+                <div class="col-md-12 col-lg-2  col-xl-2 mx-auto mb-md-0 mb-4">
                     <!-- Links -->
                     <h6 class="text-uppercase fw-bold mb-4 color-white">Contact</h6>
                     <p class="color-white fs-m"> New York, NY 10012, US</p>
@@ -933,5 +998,10 @@
     </div>
     <!-- Copyright -->
 </footer>
-<!-- Footer -->
+<!-- End Footer -->
+<script src="./Assets/CSS/script.js"></script>
+<!-- Include Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
 </html>
