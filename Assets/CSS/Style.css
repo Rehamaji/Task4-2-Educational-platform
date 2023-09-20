@@ -466,8 +466,8 @@ ul.newlist li::before {
 }
 
 .bg-trans {
-/ / background: rgba(0, 0, 255, 0.6);
-    background: transparent;;
+// background: rgba(0, 0, 255, 0.6);
+    background: transparent;
 }
 /*Test*/
 .card:hover {
@@ -495,10 +495,16 @@ ul.newlist li::before {
     padding: 15px;
     transition: all 0.2s ease-in-out;
 }
+.btn {
+    padding:0.375rem 0.45rem !important;
+    border: none !important;
+}
+/*.bg-trans
+{background-color: transparent !important;}*/
 /*-----------------------------------------✓ Media query-----------------------------------------------*/
 @media (max-width: 1395px) {
-    ul.newlist {
-      //  background-color: rgb(96, 154, 277) !important;// dodgerblue;
+    .navhead/*ul.newlist */{
+        background-color: rgb(96, 154, 277) !important;// dodgerblue;
         width: 50%;
         border-radius: 3%;
     }
