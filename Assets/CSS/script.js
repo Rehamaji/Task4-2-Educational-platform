@@ -21,21 +21,18 @@
     }
     var hero = document.getElementById("hero");
 
-    var bgnav = hero.offsetHeight/10;
+    var bgnav = navbar.offsetTop;
     function myFunction1() {
-        console.log('top', hero.offsetTop)
-        console.log(hero.offsetHeight/10)
-        console.log('windo', window.pageYOffset)
         if (window.pageYOffset >= bgnav) {
             // navbar.classList.remove("nav-absolute")
             //
-            navbar.classList.add("bg-color-blue")
+            navbar.classList.add("bg-blue2");//"bg-color-blue");
             navbar.classList.remove("bg-trans")
             console.log('test')
         } else {
             // navbar.classList.add("nav-absolute")
             //
-            navbar.classList.remove("bg-color-blue");
+            navbar.classList.remove("bg-blue2");//"bg-color-blue");
             navbar.classList.add("bg-trans")
 
         }
@@ -44,3 +41,12 @@
         // console.log('done');
         // }
     }
+        // Close the navbar when a link is clicked
+      /*  document.querySelectorAll('.navbar-nav a.nav-link').forEach(function (elem) {
+        elem.addEventListener('click', function () {
+            var navbarCollapse = document.querySelector('.navbar-collapse');
+            if (navbarCollapse.classList.contains('show')) {
+                navbarCollapse.classList.remove('show');
+            }
+        });
+    });*/
