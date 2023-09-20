@@ -497,8 +497,8 @@ ul.newlist li::before {
 }
 /*-----------------------------------------✓ Media query-----------------------------------------------*/
 @media (max-width: 1395px) {
-    ul {
-        background-color: rgb(96, 154, 277) !important;// dodgerblue;
+    ul.newlist {
+      //  background-color: rgb(96, 154, 277) !important;// dodgerblue;
         width: 50%;
         border-radius: 3%;
     }
